@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+            color: #333;
+            font-size: 61px;
+            background-color: #dadada;
+            padding: 100px;
+        }
+
+        .form_box {
+            width: 2000px;
+            margin-left: 130px;
+            padding: 100px;
+            background-color: white;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        #SubmitForm {
+            border: none;
+            outline: none;
+            background-color: #66cc3b;
+            color: white;
+            height: 120px;
+            width: 250px;
+            font-size: 56px;
+            text-decoration: none;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 17px;
+            padding-right: 17px;
+            margin-bottom: 0px;
+            margin-left: 45px;
+        }
+
+
+        .heading {
+            background-color: #ac1219;
+            color: white;
+            height: 140px;
+            width: 100%;
+            line-height: 130px;
+            text-align: center;
+
+        }
+
+        .shadow {
+            -webkit-box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.43);
+            -moz-box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.43);
+            box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.43);
+        }
+
+        .button {
+            text-align: left;
+            width: 33%;
+            float: left;
+        }
+    </style>
+
+<body>
+    <div class="form_box shadow">
+        <form method="post">
+            <div class="heading">
+                Feedback Form
+            </div>
+            <br />
+            <p>What do you think about the overall quality of the shopping website ?</p>
+            <div>
+                <div class="button">
+                    <img src="bad.png" alt=""> <br />
+                    <input type="radio" name="quality" value="0"> Bad
+                </div>
+                <div class="pic">
+                    <img src="neutral.png" alt=""> <br />
+                    <input type="radio" name="quality" value="1"> Okay
+                </div>
+                <div class="pic">
+                    <img src="good.png" alt=""> <br />
+                    <input type="radio" name="quality" value="2"> Good
+                </div>
+            </div>
+
+            <p>Do you have any suggestion for us? </p>
+            <textarea name=" suggestion" rows="6" cols="56" style="resize:none;font-size: 38px;"></textarea>
+            <a id="SubmitForm" type="submit" href="Respond.html">submit</a>
+        </form>
+    </div>
+</body>
+
+</html>
