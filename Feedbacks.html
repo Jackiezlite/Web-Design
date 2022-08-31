@@ -11,13 +11,13 @@
         body {
             font-family: cursive;
             color: #333;
-            font-size: 61px;
+            font-size: 50%;
             background-color: #dadada;
             padding: 100px;
         }
 
         .form_box {
-            width: 2000px;
+            width: 1000px;
             margin-left: 130px;
             padding: 100px;
             background-color: white;
@@ -28,13 +28,13 @@
             margin-bottom: 5px;
         }
 
-        #SubmitForm {
+        button {
             border: none;
             outline: none;
             background-color: #66cc3b;
             color: white;
-            height: 120px;
-            width: 250px;
+            height: 40%;
+            width: 40%;
             font-size: 56px;
             text-decoration: none;
             padding-bottom: 10px;
@@ -43,6 +43,12 @@
             padding-right: 17px;
             margin-bottom: 0px;
             margin-left: 45px;
+            transition: all 2s;
+        }
+
+        button:hover{
+            width:50%;
+            height:50%
         }
 
 
@@ -62,13 +68,19 @@
             box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.43);
         }
 
-        .button {
-            text-align: left;
-            width: 33%;
-            float: left;
-        }
-    </style>
+        input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
 
+    </style>
+<script language="Javascript">
+    function buttonclick() {
+    alert('Thank you for your response! Click okay to return to our main page.');
+    window.location.replace("Drinks.html");
+    }
+</script>
 <body>
     <div class="form_box shadow">
         <form method="post">
@@ -93,8 +105,8 @@
             </div>
 
             <p>Do you have any suggestion for us? </p>
-            <textarea name=" suggestion" rows="6" cols="56" style="resize:none;font-size: 38px;"></textarea>
-            <a id="SubmitForm" type="submit" href="Respond.html">submit</a>
+            <textarea name=" suggestion" rows="6" cols="56" style="resize:30%;font-size: 38px" width=40%;></textarea>
+            <button onclick="buttonclick()">Submit</button>
         </form>
     </div>
 </body>
