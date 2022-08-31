@@ -39,6 +39,7 @@ footer {
     margin-top: -180px;
     margin-bottom: 90px;
     padding: 0px;
+    transition-duration: 1s;
 }
 
 #h1:hover {
